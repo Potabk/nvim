@@ -1,0 +1,10 @@
+{
+  "Python main": {
+    "prefix": "main",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "    $0"
+    ],
+    "description": "Python main entry"
+  }
+}
