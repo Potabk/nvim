@@ -11,14 +11,9 @@ return {
             end
 
             local root = LazyVim.root()
-            local project = vim.fs.basename(root)
             local relative = vim.fs.relpath(root, file)
 
-            if relative then
-              return project .. "/" .. relative
-            end
-
-            return vim.fn.fnamemodify(file, ":t")
+            return relative or vim.fn.fnamemodify(file, ":t")
           end,
         },
       }
